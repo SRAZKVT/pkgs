@@ -1,0 +1,25 @@
+# Template file for 'qbe'
+pkgname=qbe
+version=1.0
+revision=1
+makedepends="make"
+depends=""
+short_desc="Quick compiler BackEnd"
+maintainer="SRAZKVT <sarah.mathey66666@gmail.com>"
+license="MIT"
+homepage="https://c9x.me/compile/"
+distfiles="https://c9x.me/compile/release/qbe-1.0.tar.xz"
+checksum="257ef3727c462795f8e599771f18272b772beb854aacab97e0fda70c13745e0c"
+
+do_build() {
+	make
+}
+
+do_check() {
+	make -k check
+}
+
+do_install() {
+	make DESTDIR="${DESTDIR}" STRIP=true PREFIX=/usr install
+	vlicense LICENSE
+}
