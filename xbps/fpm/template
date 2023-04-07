@@ -1,6 +1,6 @@
 # Template file for 'fpm'
 pkgname=fpm
-version=0.7.0
+version=0.8.0
 revision=1
 create_wrksrc=yes
 archs="x86_64* i686*"
@@ -13,8 +13,8 @@ homepage="https://fpm.fortran-lang.org"
 distfiles="https://github.com/fortran-lang/fpm/releases/download/v${version}/fpm-${version}.zip
  https://github.com/fortran-lang/fpm/releases/download/v${version}/fpm-${version}.F90
  https://raw.githubusercontent.com/fortran-lang/fpm/main/LICENSE"
-checksum="536dec7d4502221734683b15e6ff64a6ab3f9910df122d18f851c9a68711f91f
- d16e45b705029d6d38b0ba7cccab2b9edb48c2f29441473548b866da0389243e
+checksum="d63162a2ab013c19cefc938e52717c30f78e04de94384d4589c55a48be2724f1
+ 9d53eb618dff52587742b06244f11d5098da31e847c00d5429444471e1ca37f3
  b7e33601c0130d1a674fcc772ed9b7804460d1896469a5b219ba4062efcd9fb9"
 skip_extraction="fpm-${version}.F90 LICENSE"
 
